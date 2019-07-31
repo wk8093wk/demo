@@ -16,12 +16,10 @@ public class DemoController {
 
     @RequestMapping("/add")
     public String addUser(@RequestParam("name") String name,@RequestParam("age") Integer age){
-        System.out.println("我去");
         User user=new User();
         user.setName(name);
         user.setAge(age);
         userMapper.addUser(user);
-        System.out.println("好吧");
         return "success";
 }
 }
