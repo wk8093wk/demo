@@ -21,6 +21,7 @@ public class DemoController {
         user.setName(name);
         user.setAge(age);
         userMapper.addUser(user);
+        System.out.println("好吧");
         return "success";
 }
 }
